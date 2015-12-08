@@ -63,8 +63,10 @@ def simplify_js(page)
   `cd var/new/; yuicompressor simplified.js > simplified.min.js`
 end
 
+
+
 if ARGV[0].nil?
-  puts "Usage: mini.rb http://host.tld/path"
+  puts "Usage: ./reduce http://host.tld/path"
   exit
 end
 url = ARGV[0].downcase
